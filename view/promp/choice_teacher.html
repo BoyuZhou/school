@@ -1,0 +1,47 @@
+<div class="panel panel-default" style="width: 800px">
+    <div class="panel-heading" style="background: #fff">
+        <p>选择老师</p>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group input-group">
+                    <input type="text" class="form-control" placeholder="请输入老师姓名" ng-model="search">
+                    <span ng-click="" class="input-group-addon" style="background: #33bb33;color:#fff">搜索</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="table" style="border-top: 1px solid gainsboro;border-bottom: 1px solid gainsboro">
+                    <thead>
+                    <tr>
+                        <th><input type="radio"></th>
+                        <th ng-repeat="th in vm.teacher.thead">{{ th }}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                         <tr ng-repeat="tr in vm.teacher.tbody track by $index">
+                             <td><input type="radio"></td>
+                             <td ng-repeat="td in tr track by $index">{{ td }}</td>
+                         </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <div class="col-lg-3 col-lg-offset-3">
+                        <p style="height: 40px;text-align: center;line-height: 40px;margin-top: 10px">共6页，每页显示5条</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <ul class="pagination" style="margin: 10px auto"><li class="paginate_button previous disabled" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous"><a href="#"><</a></li><li class="paginate_button active" aria-controls="dataTables-example" tabindex="0"><a href="#">1</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">2</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">3</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">4</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">5</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">6</a></li><li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next"><a href="#">></a></li></ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer" style="background: #fff">
+        <button class="btn btn-default" ng-click="">关闭</button>
+        <button class="btn btn-default btn-success" ng-click="">提交</button>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="col-sm-12">
+    <table class="table" style="border-top: 1px solid gainsboro;border-bottom: 1px solid gainsboro">
+        <thead>
+        <tr>
+            <th><input type="checkbox"/></th>
+            <th ng-repeat="th in vm.class_list.thead">{{ th }}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="tr in vm.class_list.tbody track by $index">
+            <td><input type="checkbox"/></td>
+            <td ng-repeat="td in tr track by $index">{{ td }}</td>
+            <td>
+                <button class="btn btn-sm btn-default"><span class="fa fa-edit"></span> 修改</button>
+                <button class="btn btn-sm btn-default" ng-click="vm.allotTeacher()"><span class="fa  fa-paw"></span> 分配老师</button>
+                <button class="btn btn-sm btn-default"><span class="fa  fa-child"></span> 分配学生</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div>
+        <div class="col-lg-3 col-lg-offset-5">
+            <p style="height: 40px;text-align: center;line-height: 40px;margin-top: 10px">共6页，每页显示5条</p>
+        </div>
+        <div class="col-lg-4">
+            <ul class="pagination" style="margin: 10px auto"><li class="paginate_button previous disabled" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous"><a href="#"><</a></li><li class="paginate_button active" aria-controls="dataTables-example" tabindex="0"><a href="#">1</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">2</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">3</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">4</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">5</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">6</a></li><li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next"><a href="#">></a></li></ul>
+
+        </div>
+
+    </div>
+</div>

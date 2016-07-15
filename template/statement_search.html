@@ -1,0 +1,25 @@
+<form class="form-inline">
+    <div class="form-group">
+        <label>统计开始时间</label>
+        <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+            <input class="form-control" size="16" type="text" value="" readonly="" style="background: #fff">
+            <span class="input-group-addon" style="background: #fff"><span class="glyphicon glyphicon-calendar"></span></span>
+        </div>
+        <input type="hidden" value="2016-07-14"><br>
+    </div>
+    <div class="form-group">
+        <label>统计结束时间</label>
+        <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+            <input class="form-control" size="16" type="text" value="" readonly="" style="background: #fff">
+            <span class="input-group-addon" style="background: #fff"><span class="glyphicon glyphicon-calendar"></span></span>
+        </div>
+        <input type="hidden" value="2016-07-14"><br>
+    </div>
+    <div class="form-group" ng-show="vm.tabState == 'teachData'">
+        <label>授课老师</label>
+        <input type="text" class="form-control" />
+    </div>
+    <div class="form-group">
+        <button class="btn btn-success">搜索</button>
+    </div>
+</form>

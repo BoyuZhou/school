@@ -1,0 +1,119 @@
+<div xcj-path path1="人员管理" path2="管理员"></div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <form class="navbar-form" role="search" id="formss">
+                <div class="form-group input-group">
+                    <input type="text" class="form-control" placeholder="请输入学生姓名" ng-model="search">
+                    <span ng-click="" class="input-group-addon" style="background: #33bb33;color:#fff">搜索</span>
+                </div>
+                <div class="form-group" style="margin-left: 30px">
+                    <a class="btn btn-success" style="margin: auto 10px">新增</a>
+                    <button type="button" id="delButton" class="btn btn-danger"  data-toggle="modal" data-target="#deleteModal" ng-click="vm.delete()">删除</button>
+                </div>
+                <div class="form-group" style=" padding-left:40px;">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#inputExcelModal" >导入</button>
+                    <button type="button" class="btn btn-info" ng-click="">导出</button>
+                </div>
+                <div class="form-group" style=" padding-left:20px;">
+                    <button type="button" class="btn btn-info" onclick="window.location.href='/data/download/学员数据模板样例.xls'">导出模板</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-12">
+            <table class="table table-responsive" style="border-top: 1px solid gainsboro;border-bottom: 1px solid gainsboro;margin-bottom: 0">
+                <thead>
+                <tr>
+                    <th><input type="checkbox"/></th>
+                    <th>序号</th>
+                    <th>姓名</th>
+                    <th>昵称</th>
+                    <th>邮箱</th>
+                    <th>手机号</th>
+                    <th>是否管理员</th>
+                    <th>类型</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>1</td>
+                    <td>称大陆</td>
+                    <td>小胖</td>
+                    <td>122222226@126.com</td>
+                    <td>12345678901</td>
+                    <td>否</td>
+                    <td>老师</td>
+                    <td>
+                        <button class="btn btn-sm btn-default" ng-click="vm.changeInfo()"><span class="fa fa-edit"></span> 取消管理员</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>1</td>
+                    <td>称大陆</td>
+                    <td>小胖</td>
+                    <td>122222226@126.com</td>
+                    <td>12345678901</td>
+                    <td>否</td>
+                    <td>老师</td>
+                    <td>
+                        <button class="btn btn-sm btn-default" ng-click="vm.changeInfo()"><span class="fa fa-edit"></span> 取消管理员</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>1</td>
+                    <td>称大陆</td>
+                    <td>小胖</td>
+                    <td>122222226@126.com</td>
+                    <td>12345678901</td>
+                    <td>否</td>
+                    <td>老师</td>
+                    <td>
+                        <button class="btn btn-sm btn-default" ng-click="vm.changeInfo()"><span class="fa fa-edit"></span> 取消管理员</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>1</td>
+                    <td>称大陆</td>
+                    <td>小胖</td>
+                    <td>122222226@126.com</td>
+                    <td>12345678901</td>
+                    <td>否</td>
+                    <td>老师</td>
+                    <td>
+                        <button class="btn btn-sm btn-default" ng-click="vm.changeInfo()"> 取消管理员</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>1</td>
+                    <td>称大陆</td>
+                    <td>小胖</td>
+                    <td>122222226@126.com</td>
+                    <td>12345678901</td>
+                    <td>否</td>
+                    <td>老师</td>
+                    <td>
+                        <button class="btn btn-sm btn-default" ng-click="vm.changeInfo()"><span class="fa fa-edit"></span> 取消管理员</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div>
+                <div class="col-lg-2 col-lg-offset-6">
+                    <p style="height: 40px;text-align: center;line-height: 40px;margin-top: 10px">共6页，每页显示5条</p>
+                </div>
+                <div class="col-lg-4">
+                        <ul class="pagination" style="margin: 10px auto"><li class="paginate_button previous disabled" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous"><a href="#"><</a></li><li class="paginate_button active" aria-controls="dataTables-example" tabindex="0"><a href="#">1</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">2</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">3</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">4</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">5</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">6</a></li><li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next"><a href="#">></a></li></ul>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+

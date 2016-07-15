@@ -1,0 +1,11 @@
+
+<div class="row">
+    <div class="col-sm-11">
+        <ul class="nav nav-tabs statement-tab">
+            <li role="presentation"  ng-class="{'active': vm.tabState == 'teachData'}" style="margin-left: 20px"><a href="#" ng-click="vm.changeTab('teachData')">授课</a></li>
+            <li role="presentation"  ng-class="{'active': vm.tabState == 'studyData'}"><a href="#" ng-click="vm.changeTab('studyData')">学习</a></li>
+            <li role="presentation"  ng-class="{'active': vm.tabState == 'execData'}"><a href="#" ng-click="vm.changeTab('execData')">练习</a></li>
+            <li role="presentation"  ng-class="{'active': vm.tabState == 'evaData'}"><a href="#" ng-click="vm.changeTab('evaData')">测评</a></li>
+        </ul>
+    </div>
+</div>

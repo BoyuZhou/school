@@ -10,6 +10,6 @@ mainModule.run(function ($http, $state, $location) {
         var page = $location.$$path;
         $state.go(page.substring(1));
     }).error(function () {
-        $state.go('home.students');
+        //$state.go('home.students');
     });
 });

@@ -1,17 +1,9 @@
 
-    <div class="row">
-        <div class="col-sm-4 col-sm-offset-8">
-            <ol class="breadcrumb" style="margin-top: 5px;background: #fff">
-                <li>当前位置</li>
-                <li><a>人员管理</a></li>
-                <li class="active">学生管理</li>
-            </ol>
-        </div>
-    </div>
+    <div xcj-path path1="人员管理" path2="修改学员"></div>
     <div class="row">
         <div class="col-sm-12">
             <div class="panel panel-default" style="margin: auto 18px">
-                <div class="panel-heading">
+                <div class="panel-heading" class="xcj-lightgreen">
                     <p >编辑</p>
                 </div>
                 <div class="row">
@@ -23,10 +15,10 @@
                                     <input type="text" class="form-control"  placeholder="上传LOGO">
                                 </div>
                                 <div class=" col-sm-2">
-                                    <button class="btn btn-success">上传头像</button>
+                                    <button class="btn btn-success btn-block">上传头像</button>
                                 </div>
                                 <div class=" col-sm-2">
-                                    <button class="btn btn-success">查看头像</button>
+                                    <button class="btn btn-success btn-block">查看头像</button>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -36,69 +28,86 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label  class="col-sm-3 control-label"><span class="fa fa-asterisk" style="color: red"></span> 姓名</label>
+                                <label  class="col-sm-3 control-label"><span class="fa fa-asterisk xcj-import" style="color: red"></span> 姓名</label>
                                 <div class="col-sm-9">
                                     <input type="text" class="form-control"  placeholder="请输入姓名">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label  class="col-sm-3 control-label"><span class="fa fa-asterisk" style="color: red"></span> 学号</label>
+                                <label  class="col-sm-3 control-label"><span class="fa fa-asterisk xcj-import" style="color: red"></span> 学号</label>
                                 <div class="col-sm-9">
                                     <input type="text" class="form-control"  placeholder="请输入学号">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label  class="col-sm-3 control-label"><span class="fa fa-asterisk" style="color: red"></span> 密码</label>
+                                <label  class="col-sm-3 control-label"><span class="fa fa-asterisk xcj-import" style="color: red"></span> 密码</label>
                                 <div class="col-sm-9">
                                     <input type="text" class="form-control"  placeholder="请输入密码">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label  class="col-sm-3 control-label"><span class="fa fa-asterisk" style="color: red"></span> 确认密码</label>
+                                <label  class="col-sm-3 control-label"><span class="fa fa-asterisk xcj-import" style="color: red"></span> 确认密码</label>
                                 <div class="col-sm-9">
                                     <input type="text" class="form-control"  placeholder="请输入密码">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label  class="col-sm-3 control-label"><span class="fa fa-asterisk" style="color: red"></span> 性别</label>
-                                <div class="col-sm-3">
-                                    <select class="form-control" name="省">
-                                        <option value="">男</option>
-                                        <option value="">女</option>
-                                    </select>
+                                <label  class="col-sm-3 control-label"><span class="fa fa-asterisk xcj-import" style="color: red"></span> 性别</label>
+                                <div class="col-sm-4">
+                                    <!--<select class="form-control" name="省">-->
+                                        <!--<option value="">男</option>-->
+                                        <!--<option value="">女</option>-->
+                                    <!--</select>-->
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" />
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-down"></span></span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label  class="col-sm-3 control-label"><span class="fa fa-asterisk" style="color: red"></span> 邮箱</label>
+                                <label  class="col-sm-3 control-label"><span class="fa fa-asterisk xcj-import" style="color: red"></span> 邮箱</label>
                                 <div class="col-sm-9">
                                     <input type="text" class="form-control"  placeholder="请输入邮箱">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label  class="col-sm-3 control-label"><span class="fa fa-asterisk" style="color: red"></span> 手机号</label>
+                                <label  class="col-sm-3 control-label"><span class="fa fa-asterisk xcj-import" style="color: red"></span> 手机号</label>
                                 <div class="col-sm-9">
                                     <input type="text" class="form-control"  placeholder="请输入手机号">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label  class="col-sm-3 control-label"><span class="fa fa-asterisk" style="color: red"></span> 所在地址</label>
-                                <div class="col-sm-5">
-                                        <select class="form-control" name="省">
-                                            <option value="" style="display: none" disabled="disabled" selected="selected">省</option>
-                                            <option value="">北京市</option>
-                                        </select>
+                                <label  class="col-sm-3 control-label"><span class="fa fa-asterisk xcj-import" style="color: red"></span> 所在地址</label>
+                                <div class="col-sm-4 ">
+                                        <!--<select class="form-control" name="省">-->
+                                            <!--<option value="" style="display: none" disabled="disabled" selected="selected">省</option>-->
+                                            <!--<option value="">北京市</option>-->
+                                        <!--</select>-->
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" />
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-down"></span></span>
+                                    </div>
+
                                 </div>
-                                <div class="col-sm-5 col-sm-offset-3" style="margin-top: 20px">
-                                        <select class="form-control" name="市">
-                                            <option value="" style="display: none" disabled="disabled" selected="selected">市</option>
-                                            <option value="">北京市</option>
-                                        </select>
+                                <div class="col-sm-4 col-sm-offset-3" style="margin-top: 20px">
+                                        <!--<select class="form-control" name="市">-->
+                                            <!--<option value="" style="display: none" disabled="disabled" selected="selected">市</option>-->
+                                            <!--<option value="">北京市</option>-->
+                                        <!--</select>-->
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" />
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-down"></span></span>
+                                    </div>
                                 </div>
-                                <div class="col-sm-5 col-sm-offset-3" style="margin-top: 20px">
-                                        <select class="form-control" name="区">
-                                            <option value="" disabled="disabled" selected="selected">区</option>
-                                            <option value="">海淀区</option>
-                                        </select>
+                                <div class="col-sm-4 col-sm-offset-3" style="margin-top: 20px">
+                                        <!--<select class="form-control" name="区">-->
+                                            <!--<option value="" disabled="disabled" selected="selected">区</option>-->
+                                            <!--<option value="">海淀区</option>-->
+                                        <!--</select>-->
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" />
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-down"></span></span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -107,17 +116,16 @@
                                     <textarea class="form-control" name="" id="" cols="50" rows="3" placeholder="详细地址"></textarea>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-3 col-sm-2">
+                                    <button class="btn btn-default btn-block" ng-click="">返回</button>
+                                </div>
+                                <div class="col-sm-2 col-sm-offset-5">
+                                    <button class="btn btn-default btn-success btn-block" ng-click="">保存</button>
+                                </div>
+
+                            </div>
                         </form>
-                    </div>
-                </div>
-                <div class="panel-footer">
-                    <div class="row">
-                        <div class="col-sm-2  col-sm-offset-4">
-                            <button class="btn btn-default" ng-click="">返回</button>
-                        </div>
-                        <div class="col-sm-2 col-sm-offset-1">
-                            <button class="btn btn-default btn-success" ng-click="">保存</button>
-                        </div>
                     </div>
                 </div>
             </div>

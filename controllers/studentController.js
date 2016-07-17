@@ -19,7 +19,7 @@ mainModule.controller('studentController', ['$scope', 'mainService', '$timeout',
         mainService.prompSrc = 'view/promp/student_changepw.html';
         $timeout(function () {
             mainService.promp = true;
-        })
+        },10);
     };
 
 }]);

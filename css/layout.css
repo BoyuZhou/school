@@ -5,6 +5,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 body{
     -webkit-user-select: none;
+    font-family: "微软雅黑";
 }
 ul,li{
     list-style: none;
@@ -142,3 +143,50 @@ table tbody tr td {
         /*width: 1148px;*/
     /*}*/
 /*}*/
+
+#remember:checked {
+    background: #33bb33;
+}
+
+.xcj-red{
+    background: #f53b3b;
+}
+.xcj-blue{
+    background: #5dd5e1;
+}
+.xcj-green{
+    background: #33bb33;
+}
+.xcj-yello{
+    background: #ffaa22;
+}
+.xcj-lightgreen{
+    background: #effaef;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #f53b3b;
+    border-color: #f53b3b;
+}
+.btn-success {
+     color: #fff;
+     background-color: #33bb33;
+     border-color: #33bb33;
+ }
+
+.btn-info {
+    color: #fff;
+    background-color: #5dd5e1;
+    border-color: #5dd5e1;
+}
+
+.pagination li{
+    display: inline-block;
+    margin:auto 5px;
+}
+
+.xcj-import{
+    color: red;
+    font-size: 10px;
+}

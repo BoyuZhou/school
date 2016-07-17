@@ -1,3 +1,3 @@
-mainModule.controller('teacher', ['$scope', function ($scope) {
+mainModule.controller('teacherController', ['$scope', function ($scope) {
     var vm = this;
 }]);

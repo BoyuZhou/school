@@ -30,9 +30,16 @@ mainModule.directive('xcjPromp', function ($timeout, $rootScope) {
             }
         },
         template:'<div class="promp"  id="promp">\
-        <div ng-click="closePromp()"><span class="glyphicon glyphicon-remove" style="position: absolute; right: 10px;top: 20px;z-index: 10;"></span></div>\
+        <div ng-click="closePromp()"><span class="glyphicon glyphicon-remove" style="position: absolute; right: 10px;top: 20px;z-index: 10;color: #33bb33"></span></div>\
                  <div id="clude" class="row" style="padding: 5px" ng-include src="vm.mainService.prompSrc">\
                  </div>\
                  </div>'
     }
 });
+
+mainModule.directive('xcjPagination', function () {
+    return {
+        restrict: 'EA',
+        templateUrl: 'template/pagination.html'
+    }
+})

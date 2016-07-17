@@ -15,24 +15,19 @@
                 </tr>
                 </tbody>
             </table>
-            <div>
-                <div class="col-lg-3 col-lg-offset-5">
-                    <p style="height: 40px;text-align: center;line-height: 40px;margin-top: 10px">共6页，每页显示5条</p>
-                </div>
-                <div class="col-lg-4">
-                    <ul class="pagination" style="margin: 10px auto"><li class="paginate_button previous disabled" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous"><a href="#"><</a></li><li class="paginate_button active" aria-controls="dataTables-example" tabindex="0"><a href="#">1</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">2</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">3</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">4</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">5</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">6</a></li><li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next"><a href="#">></a></li></ul>
-
-                </div>
+            <div xcj-pagination>
 
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-4 col-sm-offset-1">
-            <button class="btn btn-default">返回</button>
-            <button class="btn btn-success">保存</button>
+        <div class="col-sm-1 col-sm-offset-1">
+            <button class="btn btn-default btn-block">返回</button>
         </div>
-        <div class="col-sm-2 col-offset-3">
-            <button class="btn btn-success" ng-click="vm.choice_teacher()">选择老师</button>
+        <div class="col-sm-1">
+            <button class="btn btn-success btn-block">保存</button>
+        </div>
+        <div class="col-sm-1 col-sm-offset-3">
+            <button class="btn btn-success btn-block" ng-click="vm.choice_teacher()">选择老师</button>
         </div>
     </div>
